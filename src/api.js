@@ -3,14 +3,6 @@ const serverless = require("serverless-http");
 
 const app = fastify();
 
-app.register(
-  function (app, _, done) {
-    app.get("/", async () => {
-      return { hello: "world" };
-    });
-    done();
-  },
-  { prefix: "/.netlify/functions/api" }
-);
+app.register(require("./routes"));
 
 module.exports.handler = serverless(app);
