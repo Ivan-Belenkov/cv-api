@@ -20,6 +20,7 @@
     "fastify": "^4.9.2",
     "fastify-mongoose-driver": "^3.2.0",
     "fastify-plugin": "^4.3.0",
+    "lodash": "^4.17.21",
     "netlify-lambda": "^2.0.15",
     "serverless-http": "^3.1.0",
     "webpack-node-externals": "^3.0.0"
